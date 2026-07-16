@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Shopping</title>
+        <script>
+            function onClickSHopping(){
+                debugger;
+                let price=document.getElementById("txtPrice").value;
+                let discount=document.getElementById("txtDiscount").value;
+                let finalprice=price-(price*discount/100);
+                alert(finalprice);
+            }
+        </script>
+    </head>
+    <body>
+        <label>Price</label>
+        <input id="txtPrice" type="text">
+        <label>Discount</label>
+        <input id="txtDiscount" type="text"> 
+        <button id="btnsubmit" onclick="onClickSHopping()">Discount</button>
+    </body>
+</html>

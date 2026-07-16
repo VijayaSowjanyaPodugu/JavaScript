@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Division</title>
+        <script>
+            function onClickDivision(){
+                let firstNumber=Number(document.getElementById("txtFirstNumber").value);
+                let secondNumber=Number(document.getElementById("txtSecondNumber").value);
+                let sum=firstNumber/secondNumber;
+                alert(sum);
+            }
+        </script>
+    </head>
+    <body>
+        <label>First Number</label>
+        <input type="number" id="txtFirstNumber">
+        <label>Second Number</label>
+        <input type="number" id="txtSecondNumber">
+        <button id="btnSubmit" onclick="onClickDivision()">Submit</button>
+    </body>
+</html>

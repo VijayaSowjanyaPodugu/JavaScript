@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator Student Percentage</title>
+        <script>
+            function onClickPercentage(){
+                debugger;
+                let total=600;
+                let telugu=Number(document.getElementById("txtTelugu").value);
+                let hinid=Number(document.getElementById("txtHinid").value);
+                let english=Number(document.getElementById("txtEnglish").value);
+                let maths=Number(document.getElementById("txtMath").value);
+                let science=Number(document.getElementById("txtScience").value);
+                let social=Number(document.getElementById("txtSocial").value);
+                let obtained=Number(telugu+hinid+english+maths+science+social);
+                let percentage=(obtained /total)*100;
+                alert(percentage.toFixed(2)+"%");
+            }
+        </script>
+    </head>
+    <body>
+        <label>Telugu</label>
+        <input id="txtTelugu" type="number"><br>
+        <label>Hinid</label>
+        <input id="txtHinid" type="number"><br>
+        <label>English</label>
+        <input id="txtEnglish" type="number"><br>
+        <label>Maths</label>
+        <input id="txtMath" type="number"><br>
+        <label>Science</label>
+        <input id="txtScience" type="number"><br>
+        <label>Social</label>
+        <input id="txtSocial" type="number"><br>
+        <button id="btnsubmit" onclick="onClickPercentage()">Student Percentage</button>
+    </body>
+</html>

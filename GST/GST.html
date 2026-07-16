@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function onClickGst(){
+                debugger;
+                let amount=  Number(document.getElementById("txtAmount").value);
+                let gst=  Number(document.getElementById("txtGst").value);
+                let total=Number(amount+(amount*gst/100));
+                alert(total);
+            }
+
+        </script>
+    </head>
+    <body>
+        <label>Amount</label>
+        <input id="txtAmount">
+        <label>Gst</label>
+        <input id="txtGst">
+        <button id="btnsubmit" onclick="onClickGst()">Submit</button>
+    </body>
+</html>

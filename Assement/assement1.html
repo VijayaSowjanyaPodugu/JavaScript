@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>APEACET Rank</title>
+        <script>
+            function onClickAPEACET(){
+                debugger;
+                let inter=Number(document.getElementById("txtInter").value);
+                let eacet=Number(document.getElementById("txtEacet").value);
+                let result=Number(inter*25/1000)+(eacet*75/160);
+                alert(result);
+
+            }
+        </script>
+    </head>
+    <body>
+        <label>Intermediate</label>
+        <input id="txtInter">
+        <label>APEACET</label>
+        <input id="txtEacet">
+        <button id="btnsubmit" onclick="onClickAPEACET()">Result</button>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EMI</title>
+    <script>
+        function onClickEmi() {
+            debugger;
+            let loan =Number( document.getElementById("txtLoan").value);
+            let month =Number(document.getElementById("txtMonth").value);
+            let emi = Number(loan / month.toFixed(2));
+            alert(emi)
+        }
+
+    </script>
+</head>
+
+<body>
+    <label>Loan</label>
+    <input id="txtLoan">
+    <label>Months</label>
+    <input id="txtMonth">
+    <button id="btnsubmit" onclick="onClickEmi()">Submit</button>
+</body>
+
+</html>

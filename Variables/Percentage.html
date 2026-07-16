@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>percentage</title>
+        <script>
+            function onClickPercentage(){
+                let firstNumber=Number(document.getElementById("txtFirstNumber").value);
+                let secondNumber=Number(document.getElementById("txtSecondNumber").value);
+                let remainder=firstNumber%secondNumber;
+                alert(remainder);
+            }
+        </script>
+    </head>
+    <body>
+        <label>First Number</label>
+        <input type="number" id="txtFirstNumber">
+        <label>Second Number</label>
+        <input type="number" id="txtSecondNumber">
+        <button id="btnSubmit" onclick="onClickPercentage()">Submit</button>
+    </body>
+</html>

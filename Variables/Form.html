@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <script>
+        function onCilckForm() {
+            debugger;
+            let name = document.getElementById("txtName").value;
+            let phoneNumber = document.getElementById("txtPhoneNumber").value;
+            let emailId = document.getElementById("txtEmailId").value;
+            inputstring = "My Name is " + name + " My Phone Number " + phoneNumber + " My Email Id " + emailId;
+            alert(inputstring);
+        }
+    </script>
+</head>
+
+<body>
+
+        <label>Name</label>
+        <input type="text" placeholder="Enter your Name" id="txtName"><br>
+        <label>Phone Number</label>
+        <input type="number" placeholder="Enter Phone Number" id="txtPhoneNumber"><br>
+        <label>Email Id</label>
+        <input type="text" placeholder="Enter Email Id" id="txtEmailId"><br>
+        <button id="btnSubmit" onclick="onCilckForm()">Submit</button>
+ 
+</body>
+
+</html>

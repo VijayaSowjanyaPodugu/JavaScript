@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function onClickSalary(){
+            debugger;
+            let salary=Number(document.getElementById("txtsalaray").value);
+            let revised=salary*1.1;
+            alert(revised)
+            }
+        </script>
+    </head>
+    <body>
+        <label>salary</label>
+        <input id="txtsalaray">
+        <button id="btnsubmit" onclick="onClickSalary()">submit</button>
+    </body>
+</html>

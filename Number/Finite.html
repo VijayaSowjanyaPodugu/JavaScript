@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Finite</title>
+    <script>
+        function onclickFinite() {
+            debugger;
+
+            let number = Number(document.getElementById("txtFinite").value);
+            let result = (Number.isFinite(number));
+            alert(result);
+        }
+        function onclickMax() {
+            debugger;
+            let number = Number(document.getElementById("txtFinite").value);
+            let result = (Number.MAX_VALUE);
+            alert(result);
+        }
+        function onclickMin() {
+            debugger;
+            let number = Number(document.getElementById("txtFinite").value);
+            let result = (Number.MIN_VALUE);
+            alert(result);
+        }
+
+        function onclickMaxSafeInteger() {
+            debugger;
+            let number = Number(document.getElementById("txtFinite").value);
+            let result = (Number.MAX_SAFE_INTEGER);
+            alert(result);
+        }
+        function onclickMinSafeInteger() {
+            debugger;
+            let number = Number(document.getElementById("txtFinite").value);
+            let result = (Number.MIN_SAFE_INTEGER);
+            alert(result);
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <label>Number</label>
+    <input id="txtFinite">
+    <button id="btnsubmit" onclick="onclickFinite()">Finite</button>
+    <button id="btnsubmit" onclick="onclickMax()">Max</button>
+    <button id="btnsubmit" onclick="onclickMin()">Min</button>
+    <button id="btnsubmit" onclick="onclickMaxSafeInteger()">Max Safe Integer</button>
+    <button id="btnsubmit" onclick="onclickMinSafeInteger()">Min Safe Integer</button>
+
+
+</body>
+
+</html>

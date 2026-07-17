@@ -36,6 +36,18 @@
             let result = (Number.MIN_SAFE_INTEGER);
             alert(result);
         }
+         function onclickPostivie()  {
+            debugger;
+            let number = Number(document.getElementById("txtFinite").value);
+            let result = (Number.POSITIVE_INFINITY);
+            alert(result);
+        }
+         function onclickNegative(){
+            debugger;
+            let number = Number(document.getElementById("txtFinite").value);
+            let result = (Number.NEGATIVE_INFINITY);
+            alert(result);
+        }
 
 
     </script>
@@ -46,13 +58,17 @@
         <a href="../index.html">Back to Home</a>
     </header>
     <hr>
+    <h1>Number Properties</h1>
     <label>Number</label>
-    <input id="txtFinite">
+    <input id="txtFinite"><br>
     <button id="btnsubmit" onclick="onclickFinite()">Finite</button>
     <button id="btnsubmit" onclick="onclickMax()">Max</button>
     <button id="btnsubmit" onclick="onclickMin()">Min</button>
     <button id="btnsubmit" onclick="onclickMaxSafeInteger()">Max Safe Integer</button>
     <button id="btnsubmit" onclick="onclickMinSafeInteger()">Min Safe Integer</button>
+    <button id="btnsubmit" onclick="onclickPostivie()">Postivie Infinite</button>
+    <button id="btnsubmit" onclick="onclickNegative()">Negative Infinite</button>
+    
 
 
 </body>

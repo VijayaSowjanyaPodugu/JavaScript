@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Sign&Absolute</title>
+    <script>
+        function onClickSign() {
+            debugger;
+            let number = Number(document.getElementById("txtPI").value);
+            let result = Number( Math.sign(number));
+            alert(result);
+        }
+        function onClickAbsolute() {
+            debugger;
+            let number = Number(document.getElementById("txtPI").value);
+            let result = Number(Math.abs(number));
+            alert(result);
+        }
+        
+    </script>
+</head>
+
+<body>
+    <h1>Math Sign and Absolute Value </h1>
+    <label>Number</label>
+    <input id="txtPI"><br>
+    <button onclick="onClickSign()">Sign</button>
+    <button onclick="onClickAbsolute()">Absolute</button>
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Power and Roots</title>
+    <script>
+        function onClickPower() {
+            debugger;
+            let value1 = Number(document.getElementById("txtNumber").value);
+            let value2 = Number(document.getElementById("txtPower").value);
+            let result = Number(Math.pow(value1,value2));
+            alert(result);
+        }
+        function onClickSquare() {
+            debugger;
+            let value = Number(document.getElementById("txtPower").value);
+            let result = Number(Math.sqrt(value));
+            alert(result);
+        }
+        function onClickCubeRoot() {
+            debugger;
+            let value = Number(document.getElementById("txtPower").value);
+            let result = Number(Math.cbrt(value));
+            alert(result);
+        }
+        
+    </script>
+</head>
+
+<body>
+    <h1>Power</h1>
+    <div>
+    <label>Number</label>
+    <input id="txtNumber"><br>
+    <label>Power</label>
+    <input id="txtPower"><br>
+    <button onclick="onClickPower()">Power</button>
+    </div><br>
+    <h1>Roots</h1>
+    <div>
+    <label>Number</label>
+    <input id="txtPower"><br>
+    <button onclick="onClickSquare()">Square</button>
+    <button onclick="onClickCubeRoot()">CubeRoot</button>
+    </div>
+
+
+
+
+</body>
+
+</html>

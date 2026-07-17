@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math PI</title>
+    <script>
+        function onClickPI() {
+            debugger;
+            let number = Number(document.getElementById("txtPI").value);
+            let result = Number(number * Math.PI);// value of Pi.
+            alert(result);
+        }
+        function onClickAreaOfCircle() {
+            debugger;
+            let radius = Number(document.getElementById("txtPI").value);
+            let result = Number(Math.PI * radius * radius);//area of circle
+            alert(result);
+        }
+        function onClickE() {
+            debugger;
+            let number = Number(document.getElementById("txtPI").value);
+            let result = Number(number * Math.E);//Euler's Number.
+            alert(result);
+        }
+        function onClickSQRT2() {
+            debugger;
+            let number = Number(document.getElementById("txtPI").value);
+            let result = Number(number* Math.SQRT2);//Square root of 2
+            alert(result);
+        }
+        function onClickLN2() {
+            debugger;
+            let number = Number(document.getElementById("txtPI").value);
+            let result = Number(number * Math.LN2);//Natural logarithm of 2
+            alert(result);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Math Constants(PI)</h1>
+    <label>Number</label>
+    <input id="txtPI"><br>
+    <button onclick="onClickPI()">Value Of PI</button>
+    <button onclick="onClickAreaOfCircle()">Area Of Circle</button>
+    <button onclick="onClickE()">Euler Number</button>
+    <button onclick="onClickSQRT2()">Square Root</button>
+        <button onclick="onClickLN2()">Natural logarithm of 2</button>
+
+
+
+</body>
+
+</html>

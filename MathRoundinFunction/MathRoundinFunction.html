@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Round</title>
+    <script>
+        function onClickRound(){
+            debugger;
+            let value=Number(document.getElementById("txtPI").value);
+            let result= Number(Math.round(value));//Rounds to the nearest integer.
+            alert(result);
+        } 
+         function onClickCeil(){
+            debugger;
+            let value=Number(document.getElementById("txtPI").value);
+            let result= Number(Math.ceil(value));//Always rounds up.(ex:5.1=6,5.9=6)
+            alert(result);
+        } 
+         function onClickFloor(){
+            debugger;
+            let value=Number(document.getElementById("txtPI").value);
+            let result= Number(Math.floor(value));//Always rounds down.(ex:5.4=4)
+            alert(result);
+        } 
+         function onClickTrunc(){
+            debugger;
+            let value=Number(document.getElementById("txtPI").value);
+            let result= Number(Math.trunc(value));//Removes decimal part.
+            alert(result);
+        } 
+    </script>
+</head>
+
+<body>
+    <h1>Rounding Functions</h1>
+    <label>Number</label>
+    <input id="txtPI"><br>
+    <button onclick="onClickRound()">Round</button>
+    <button onclick="onClickCeil()">Ceil</button>
+     <button onclick="onClickFloor()">Floor</button>
+      <button onclick="onClickTrunc()">Trunc</button>
+    
+
+
+</body>
+
+</html>

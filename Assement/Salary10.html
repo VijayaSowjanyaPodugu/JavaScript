@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<htnl>
+
+    <head>
+        <title>salary</title>
+        <script>
+            function onClickSalary() {
+                debugger;
+                let amount = Number(document.getElementById("txtAmount").value);
+                let result = amount.toFixed(2);
+                alert(result);
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <a href="../index.html">Back to Home</a>
+        </header>
+        <hr>
+        <label>Amount</label>
+        <input id="txtAmount">
+        <button onclick="onClickSalary()">Salray</button>
+    </body>
+</htnl>

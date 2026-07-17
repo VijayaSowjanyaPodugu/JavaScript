@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String into Number</title>
+    <script>
+        function onClickNumber() {
+            debugger;
+            let numbers = document.getElementById("txtString").value;
+            let result = numbers.toString();
+            alert(result);
+            let result2 = Number(document.getElementById("txtString").value);
+            alert(result2);
+
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <hr>
+    <label>Number</label>
+    <input id="txtString">
+    <button onclick="onClickNumber()">String into Number</button>
+</body>
+
+</html>

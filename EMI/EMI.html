@@ -6,8 +6,8 @@
     <script>
         function onClickEmi() {
             debugger;
-            let loan =Number( document.getElementById("txtLoan").value);
-            let month =Number(document.getElementById("txtMonth").value);
+            let loan = Number(document.getElementById("txtLoan").value);
+            let month = Number(document.getElementById("txtMonth").value);
             let emi = Number(loan / month.toFixed(2));
             alert(emi)
         }
@@ -16,6 +16,10 @@
 </head>
 
 <body>
+    <header>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <hr>
     <label>Loan</label>
     <input id="txtLoan">
     <label>Months</label>

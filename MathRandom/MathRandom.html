@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random</title>
+        <script>
+            function onClickRandom(){
+                debugger;
+                let number=Number(document.getElementById("txtnum").value);
+                let result=Number(Math.random());
+                alert(result);
+            } 
+            function onClickRandomNumber(){
+                debugger;
+                let number=Number(document.getElementById("txtnum").value);
+                let result=Math.floor(Math.random(number)*Math.pow(10,number));
+                alert(result);
+            } 
+        </script>
+
+    </head>
+    <body>
+        <header>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <hr>
+        <label>Number</label>
+        <input id="txtnum">
+        <button onclick="onClickRandom()">Random</button>
+        <button onclick="onClickRandomNumber()">Random Number</button>
+    </body>
+</html>

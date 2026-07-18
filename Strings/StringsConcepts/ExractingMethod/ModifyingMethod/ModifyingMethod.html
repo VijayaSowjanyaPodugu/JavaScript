@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Strings</title>
+    <script>
+        function onClickToUpperClass() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let result = text.toupperclass();
+            alert(result);
+        }
+        function onClickToLowerClass() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let result = text.toLowerClass();
+            alert(result);
+        }
+
+        function onClickTrim() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let result = text.trim();
+            alert(result);
+        }
+        function onClickReplace() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let result = text.replace("jasmine", "Rose");
+            alert(result);
+        }
+        function onClickReplaceAll() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let result = text.replaceAll("Sunflower", "Marigold");
+            alert(result);
+        }
+
+    </script>
+</head>
+
+<body>
+    <label>Name</label>
+    <input id="txtName"><br>
+    <button id="btn" onclick="onClickToUpperClass()">ToUpperClass</button>
+    <button id="btn" onclick="onClickToLowerClass()">ToLowerClass</button>
+    <button id="btn" onclick="onClickTrim()">Trim</button>
+    <button id="btn" onclick="onClickReplace()">Replace</button>
+    <button id="btn" onclick="onClickReplaceAll()">Replace All</button>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Strings</title>
+    <script>
+        function onClickIndex() {
+            debugger;
+            let word = document.getElementById("txtName").value;
+            let result = word.indexOf("s");
+            alert(result);
+        }
+        function onClickLastIndex() {
+            debugger;
+            let word = document.getElementById("txtName").value;
+            let result = word.lastIndexOf("a");
+            alert(result);
+        }
+        function onClickInclude() {
+            debugger;
+            let word = document.getElementById("txtName").value;
+            let result = word.includes("@");
+            alert(result);
+        }
+    </script>
+</head>
+
+<body>
+    <label>Name</label>
+    <input id="txtName"><br>
+    <button id="btn" onclick="onClickIndex()">Index Of</button>
+    <button id="btn" onclick="onClickLastIndex()">Last Index Of</button>
+    <button id="btn" onclick="onClickInclude()">Include</button>
+    <button id="btn" onclick="onClick()">Include</button>
+
+
+
+
+</body>
+
+</html>

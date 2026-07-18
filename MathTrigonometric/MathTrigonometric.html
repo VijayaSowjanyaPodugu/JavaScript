@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trigonomteric</title>
+    <script>
+        function onClickSin(){
+            debugger;
+            let number=Number(document.getElementById("txtNum").value);
+            let result=Math.sin(number * (Math.PI / 180));
+            alert(result);
+        }
+         function onClickCos(){
+            debugger;
+            let number=Number(document.getElementById("txtNum").value);
+            let result=Math.cos(number* Math.PI/180);
+            alert(result);
+        }
+         function onClickTan(){
+            debugger;
+            let number=Number(document.getElementById("txtNum").value);
+            let result=Math.tan(number*Math.PI/180);
+            alert(result);
+        }
+        function onClickCot(){
+            debugger;
+            let number=Number(document.getElementById("txtNum").value);
+            let result=1/Math.tan(number*Math.PI/180);
+            alert(result);
+        }
+        function onClickCosec(){
+            debugger;
+            let number=Number(document.getElementById("txtNum").value);
+            let result=1/Math.sin(number * (Math.PI / 180));
+            alert(result);
+        }
+        function onClicksec(){
+            debugger;
+            let number=Number(document.getElementById("txtNum").value);
+            let result=1/Math.cos(number* Math.PI/180);
+            alert(result);
+        }        
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <hr>
+    <label>Number</label>
+    <input id="txtNum">
+    <button id="btn1" onclick="onClickSin()">sin</button>
+    <button id="btn2" onclick="onClickCos()">cos</button>
+    <button id="btn3" onclick="onClickTan()">tan</button>
+    <button id="btn1" onclick="onClickCot()">cot</button>
+    <button id="btn2" onclick="onClickCosec()">cosec</button>
+    <button id="btn3" onclick="onClickSec()">sec</button>
+  
+  
+
+</body>
+
+</html>

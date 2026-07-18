@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Logarithm</title>
+    <script>
+        function onClickLog() {
+            debugger;
+            let number = Number(document.getElementById("txtlog").value);
+            let result = Math.log(number);
+            alert(result);
+        }
+        function onClickLog10() {
+            debugger;
+            let number = Number(document.getElementById("txtlog").value);
+            let result = Math.log(number) *10;
+            alert(result);
+        }
+         function onClickLog2() {
+            debugger;
+            let number = Number(document.getElementById("txtlog").value);
+            let result = Math.log(number) *2;
+            alert(result);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <hr>
+    <h1>Logarithm</h1>
+    <label>Number</label>
+    <input id="txtlog">
+    <button id="btnsubmit1" onclick="onClickLog()">Log</button>
+    <button id="btnsubmit2" onclick="onClickLog10()">Log10</button>
+    <button id="btnsubmit3" onclick="onClickLog2()">Log2</button>
+
+
+</body>
+
+</html>

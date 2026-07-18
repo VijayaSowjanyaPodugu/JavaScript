@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maximum and Minimum</title>
+    <script>
+        function onClickMinimum() {
+            debugger;
+            let num1= Number(document.getElementById("txtNumber1").value);
+            let num2= Number(document.getElementById("txtNumber2").value);
+            let num3= Number(document.getElementById("txtNumber3").value);
+            let num4= Number(document.getElementById("txtNumber4").value);
+            let result = Number(Math.min(num1,num2,num3,num4));
+            alert(result);
+        }
+        function onClickMaximum() {
+            debugger;
+            let num1= Number(document.getElementById("txtNumber1").value);
+            let num2= Number(document.getElementById("txtNumber2").value);
+            let num3= Number(document.getElementById("txtNumber3").value);
+            let num4= Number(document.getElementById("txtNumber4").value);
+            let result = Number(Math.max(num1,num2,num3,num4));
+            alert(result);
+        }
+        
+    </script>   
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <hr>
+    <h1>Maximum and Minimum</h1>
+    <label>Number</label>
+    <input id="txtNumber1">
+    <input id="txtNumber2">
+    <input id="txtNumber3">
+    <input id="txtNumber4"><br>
+    <button onclick="onClickMinimum()">Minimum</button>
+    <button onclick="onClickMaximum()">Maximumu</button>
+</body>
+
+</html>

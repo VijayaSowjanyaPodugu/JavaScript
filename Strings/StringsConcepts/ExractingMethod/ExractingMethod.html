@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Strings</title>
+    <script>
+        function onClickSlice() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let result = text.slice(0,2);
+            alert(result);
+        }
+        function onClickNegativeSlice() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let result = text.slice(-2);
+            alert(result);
+        }
+
+        function onClickSubString() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let result = text.substring(0,4);// Does not work as expected Negative values
+            alert(result);
+        }
+       
+    </script>
+</head>
+
+<body>
+    <label>Name</label>
+    <input id="txtName"><br>
+    <button id="btn" onclick="onClickSlice()">Slice</button>
+      <button id="btn" onclick="onClickNegativeSlice()">Negative Slice</button>
+    <button id="btn" onclick="onClickSubString()">Sub String</button>
+    
+
+
+
+
+</body>
+
+</html>

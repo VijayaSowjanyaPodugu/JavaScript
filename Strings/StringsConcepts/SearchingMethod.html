@@ -7,31 +7,53 @@
         function onClickIndex() {
             debugger;
             let word = document.getElementById("txtName").value;
-            let result = word.indexOf("s");
+            let char=document.getElementById("txtLetter").value;
+            let result = word.indexOf(char);
             alert(result);
         }
         function onClickLastIndex() {
             debugger;
             let word = document.getElementById("txtName").value;
-            let result = word.lastIndexOf("a");
+             let char=document.getElementById("txtLetter").value;
+            let result = word.lastIndexOf(char);
             alert(result);
         }
         function onClickInclude() {
             debugger;
             let word = document.getElementById("txtName").value;
-            let result = word.includes("@");
+            let char=document.getElementById("txtLetter").value;
+            let result = word.includes(char);
             alert(result);
         }
+        function onClickStarts() {
+            debugger;
+            let word = document.getElementById("txtName").value;
+            let char=document.getElementById("txtLetter").value;
+            let result = word.startsWith(char);
+            alert(result);
+        }
+         function onClickEnds() {
+            debugger;
+            let word = document.getElementById("txtName").value;
+            let char=document.getElementById("txtLetter").value;
+            let result = word.endsWith(char);
+            alert(result);
+        }
+
+
     </script>
 </head>
 
 <body>
     <label>Name</label>
     <input id="txtName"><br>
+    <label>type a letter</label>
+    <input id="txtLetter"><br>
     <button id="btn" onclick="onClickIndex()">Index Of</button>
     <button id="btn" onclick="onClickLastIndex()">Last Index Of</button>
     <button id="btn" onclick="onClickInclude()">Include</button>
-    <button id="btn" onclick="onClick()">Include</button>
+    <button id="btn" onclick="onClickStarts()">Starts with</button>
+    <button id="btn" onclick="onClickEnds()">Ends with</button>
 
 
 

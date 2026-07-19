@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Concat</title>
+        <script>
+            function onClickConcat(){
+                debugger;
+                let name=document.getElementById("txtName").value;
+                let age=document.getElementById("txtAge").value;
+                let city=document.getElementById("txtCity").value;
+                result = "My name is " + name +", My age is " +age +", I am from "+ city;
+                interpolation=`My name is ${name},My age is ${age},i am from ${city}.`;
+                alert(result);
+                alert(interpolation);
+            }
+        </script>
+    </head>
+    <body>
+        <label>Name</label>
+        <input id="txtName">
+        <label>Age</label>
+        <input id="txtAge">
+        <label>City</label>
+        <input id="txtCity">
+        <button id="btnsubmit" onclick="onClickConcat()">Concat</button>
+
+    </body>
+</html>

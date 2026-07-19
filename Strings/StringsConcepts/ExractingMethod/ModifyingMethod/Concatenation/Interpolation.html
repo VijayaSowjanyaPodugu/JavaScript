@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Concat</title>
+        <script>
+            function onClickConcat(){
+                debugger;
+                let name =document.getElementById("txtName").value;
+                let version=document.getElementById("txtversion").value;
+                let ram =document.getElementById("txtRAM").value;
+                result=`Name of the phone ${name},and it version is ${version}, it is RAM ${ram}.`;
+                alert(result);
+                
+            }
+        </script>
+    </head>
+
+    <body>
+        <label>Name</label>
+        <input id="txtName">
+        <label>version</label>
+        <input id="txtversion">
+        <label>RAM</label>
+        <input id="txtRAM">
+        <button onclick="onClickConcat()">Concat</button>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Concat</title>
+        <script>
+            function onClickConcat(){
+                let name=document.getElementById("txtName").value;
+                let color=document.getElementById("txtColour").value;
+                let features=document.getElementById("txtFeatures").value;
+                result="Name of the car is"+ name+",it is color "+color+", it has features "+features;
+                interpolationresult=`Name of the Laptop${name},it is color${color},ti has features${feature}.`;
+                alert(result);
+                alert(interpolationresult);
+               
+            }
+        </script>
+    </head>
+    <body>
+        <label>name</label>
+        <input id="txtName">
+        <label>Colour</label>
+        <input id="txtColor">
+        <labe>Features</labe>
+        <input id="txtFeatures">
+        <button onclick="onClickConcat()">Concat</button>
+    </body>
+</html>

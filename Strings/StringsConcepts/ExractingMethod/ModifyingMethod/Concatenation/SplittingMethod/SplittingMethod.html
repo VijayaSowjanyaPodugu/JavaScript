@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Splitting</title>
+        <script>
+            function onClickSplit(){
+                debugger;
+                let flower=document.getElementById("txtName").value;
+                let result=flower.split(",");
+                alert(result);
+                
+            }
+        </script>
+    </head>
+    <body>
+        <label>Flowers</label>
+        <input id="txtName">
+        <button id="btnsubmit" onclick="onClickSplit()">Splitting</button>
+
+    </body>
+</html>

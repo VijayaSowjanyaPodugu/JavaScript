@@ -23,30 +23,45 @@
             let result = text.trim();
             alert(result);
         }
-        function onClickReplace() {
+        function onClickTrimStart() {
             debugger;
             let text = document.getElementById("txtName").value;
-            let result = text.replace("jasmine", "Rose");
+            let result = text.trimStart();
             alert(result);
         }
-        function onClickReplaceAll() {
+        function onClickTrimLast() {
             debugger;
             let text = document.getElementById("txtName").value;
-            let result = text.replaceAll("jasmine", "Marigold");
+            let result = text.trimEnd();
             alert(result);
         }
+         function onClickIndexOf() {
+            debugger;
+            let text = document.getElementById("txt").value;
+            let indexNo = Number (document.getElementById("txtNumber").value);
+            let result = text[indexNo];
+            alert(result);
+        }
+
 
     </script>
 </head>
 
 <body>
+    <h1>Modifying Methods</h1>
     <label>Name</label>
     <input id="txtName"><br>
     <button id="btn" onclick="onClickToUpperClass()">ToUpperClass</button>
     <button id="btn" onclick="onClickToLowerClass()">ToLowerClass</button>
     <button id="btn" onclick="onClickTrim()">Trim</button>
-    <button id="btn" onclick="onClickReplace()">Replace</button>
-    <button id="btn" onclick="onClickReplaceAll()">Replace All</button>
+    <button id="btn" onclick="onClickTrimStart()">TrimStart</button>
+    <button id="btn" onclick="onClickTrimLast()">TrimLast</button><br>
+    <h1>Searching Methods</h1>
+    <label>Text</label>
+    <input id="txt"><br>
+    <label>Number</label>
+    <input id="txtNumber"><br>
+    <button id="btn" onclick="onClickNumber()">Index number</button>
 
 
 

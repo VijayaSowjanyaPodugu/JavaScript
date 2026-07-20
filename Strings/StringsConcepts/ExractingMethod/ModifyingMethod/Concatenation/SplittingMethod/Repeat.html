@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Repeat</title>
+    <script>
+        function onClickRepeat() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let number = document.getElementById("txtNum").value;
+            let result = text.repeat(number);
+            alert(result);
+        }
+        function onClickCharAt() {
+            debugger;
+            let text = document.getElementById("txtName").value;
+            let number = document.getElementById("txtNum").value;
+            let result = text.charAt(number);
+            alert(result);
+        }
+         function onClickCharCodeAt() {
+            debugger;
+            let text = document.getElementById("txtLetter").value;
+            let result = text.charCodeAt();
+            alert(result);
+        }
+    </script>
+</head>
+
+<body>
+<header>
+<a href="../index.html">Back to Home</a>
+</header>
+<hr>
+    <label>name</label>
+    <input id="txtName">
+    <label>number</label>
+    <input id="txtNum"><br>
+    <button onclick="onClickRepeat()">Repeat</button>
+    <button onclick="onClickCharAt()">Char at</button><br>
+     <label>letter</label>
+    <input id="txtLetter"><br>
+    <button onclick="onClickCharCodeAt()">Char Code At</button>
+
+</body>
+
+</html>

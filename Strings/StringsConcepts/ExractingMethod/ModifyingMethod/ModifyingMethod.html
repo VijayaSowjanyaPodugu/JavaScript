@@ -25,14 +25,16 @@
         }
         function onClickReplace() {
             debugger;
-            let text = document.getElementById("txtName").value;
-            let result = text.replace("jasmine", "Rose");
+            let word = document.getElementById("txtWord").value;
+            let change = document.getElementById("txtChange").value;
+            let result = change.replace(word);
             alert(result);
         }
         function onClickReplaceAll() {
             debugger;
-            let text = document.getElementById("txtName").value;
-            let result = text.replaceAll("jasmine", "Marigold");
+            let Word = document.getElementById("txtWord").value;
+            let Change = document.getElementById("txtChange").value;
+            let result = change.replaceAll(word);
             alert(result);
         }
 
@@ -40,13 +42,23 @@
 </head>
 
 <body>
+<header>
+<a href="../index.html">Back to Home</a>
+</header>
+<hr>
     <label>Name</label>
     <input id="txtName"><br>
     <button id="btn" onclick="onClickToUpperClass()">ToUpperClass</button>
     <button id="btn" onclick="onClickToLowerClass()">ToLowerClass</button>
     <button id="btn" onclick="onClickTrim()">Trim</button>
-    <button id="btn" onclick="onClickReplace()">Replace</button>
-    <button id="btn" onclick="onClickReplaceAll()">Replace All</button>
+    <div>
+        <label>Name</label>
+        <input id="txtWord"><br>
+        <label>Word</label>
+        <input id="txtChange"><br>
+        <button id="btn" onclick="onClickReplace()">Replace</button>
+        <button id="btn" onclick="onClickReplaceAll()">Replace All</button>
+    </div>
 
 
 

@@ -6,9 +6,9 @@
             function onClickConcat(){
                 debugger;
                 let name =document.getElementById("txtName").value;
-                let version=document.getElementById("txtversion").value;
-                let ram =document.getElementById("txtRAM").value;
-                result=`Name of the phone ${name},and it version is ${version}, it is RAM ${ram}.`;
+                let date=document.getElementById("txtdate").value;
+               
+                result=`My name is ${name},and date of born ${date}.`;
                 alert(result);
                 
             }
@@ -20,12 +20,10 @@
 <a href="../index.html">Back to Home</a>
 </header>
 <hr>
-        <label>Name</label>
+        <label>FristName</label>
         <input id="txtName">
-        <label>version</label>
-        <input id="txtversion">
-        <label>RAM</label>
-        <input id="txtRAM">
+        <label>Date of birth</label>
+        <input id="txtdate">
         <button onclick="onClickConcat()">Concat</button>
     </body>
 </html>

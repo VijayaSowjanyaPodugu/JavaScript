@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Format</title>
+        <script>
+            function onClickFormat(){
+                let text=document.getElementById("txt").value;
+                let result=text.trim().toUpperCase();
+                alert(result);
+            }
+        </script>
+    </head>
+    <body>
+<header>
+<a href="../index.html">Back to Home</a>
+</header>
+<hr>
+        <label>Text</label>
+        <input id="txt">
+        <button onclick="onClickFormat()">check</button>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Divisible</title>
+    <script>
+        function onClickNumber() {
+            debugger;
+            let num = Number(document.getElementById("txtnum").value);
+            if (num % 2 == 1 && num % 3==0) {
+                alert("Odd Number and divisibleby 3");
+            }
+            else {
+                alert("Not Odd Number and divisibleby 3");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <label>Number</label>
+    <input id="txtnum">
+    <button onclick="onClickNumber()">check</button>
+</body>
+
+</html>

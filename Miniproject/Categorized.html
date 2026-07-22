@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Categorized</title>
+        <script>
+            function onClickSpecial(){
+                debugger;
+                let name=document.getElementById("txtName").value;
+                let age=document.getElementById("txtNum").value;
+                if(age<=16|| age>=65){
+                    alert("special Category");
+                }
+                else{
+                    alert("Not legible foe special category");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <label>Name</label>
+        <input id="txtName">
+        <label>age</label>
+        <input id="txtNum">
+        <button onclick="onClickSpecial()">check</button>
+    </body>
+</html>

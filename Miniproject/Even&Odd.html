@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>even and and</title>
+    <script>
+        function onClickEvenOdd() {
+            debugger;
+            let num = Number(document.getElementById("txtNum").value);
+            if (num % 2 == 0 && (num % 10==0))  {
+                alert("Divisible by 10");
+            }
+            else {
+                alert("Odd Number");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <hr>
+    <label>Number</label>
+    <input id="txtNum"><br>
+    <button onclick="onClickEvenOdd()">Even/Odd</button>
+
+</body>
+
+</html>

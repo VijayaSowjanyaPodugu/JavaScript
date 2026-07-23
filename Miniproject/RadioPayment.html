@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Payment</title>
+    <script>
+        function onClickPayment() {
+            debugger;
+            let selectpayment = document.querySelector('input[id="txtPayment"]:checked');
+            if (selectpayment) {
+                alert(selectpayment.value);
+            }
+            else {
+                alert("Please select Payment Method");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label>Payment Method</label><br>
+    <input name="txtPayment" type="radio" id="txtPayment" Value="Credit Card">Credit Card
+    <input name="txtPayment" type="radio" id="txtPayment" value="UPI">UPI
+    <input name="txtPayment" type="radio" id="txtPayment" value="Cash on Delivery">Cash on Delivery<br>
+
+    <button onclick="onClickPayment()">Check</button>
+
+
+</body>
+
+</html>

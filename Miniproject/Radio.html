@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Radio</title>
+    <script>
+        function onClickGender() {
+            debugger
+            const selectedGender = document.querySelector('input[id="gender"]:checked');
+            if (selectedGender) {
+                alert(selectedGender.value);
+            } else {
+                alert("Please select a gender.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label>Gender</label>
+    <input type="radio" id="gender" name="gender" value="male"> Male
+    <input type="radio" id="gender" name="gender" value="female"> Female
+    <br>
+    <button onclick="onClickGender()">check</button>
+</body>
+
+</html>

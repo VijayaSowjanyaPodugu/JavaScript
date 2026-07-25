@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>holidays</title>
-        <script>
-            function onClickWeek(){
-                let week=document.getElementById("txt").value;
-                if(week=="sun" || week=="fri"){
-                    alert("Holiday")
-                }
-                else{
-                    alert("Working Days")
-                }
+
+<head>
+    <title>holidays</title>
+    <script>
+        function onClickWeek() {
+            let week = document.getElementById("txt").value;
+            if (week == "sun" || week == "fri") {
+                alert("Holiday")
             }
-        </script>
-    </head>
-    <body>
-        <label>Weeks</label>
-        <input id="txt">
-        <button onclick="onClickWeek()">check</button>
-    </body>
+            else {
+                alert("Working Days")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <hr>
+
+    <label>Weeks</label>
+    <input id="txt">
+    <button onclick="onClickWeek()">check</button>
+</body>
+
 </html>

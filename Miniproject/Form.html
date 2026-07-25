@@ -6,20 +6,24 @@
     <script>
         function onClickCheck() {
             debugger;
-        let name=document.getElementById("txtName").value;
-        let age=document.getElementById("txtAge").value;
-        let gender=document.getElementById("txtGender").value;
-        if(age>=15 && gender=="female"){
-            alert("Valid person");
-        }
-        else{
-            alert("Invalid person");
-        }
+            let name = document.getElementById("txtName").value;
+            let age = document.getElementById("txtAge").value;
+            let gender = document.getElementById("txtGender").value;
+            if (age >= 15 && gender == "female") {
+                alert("Valid person");
+            }
+            else {
+                alert("Invalid person");
+            }
         }
 
     </script>
 
 </head>
+<header>
+    <a href="../index.html">Back to Home</a>
+</header>
+<hr>
 
 <body>
     <label>Name</label>
@@ -29,7 +33,7 @@
     <label>Gender</label>
     <input id="txtGender">
     <button onclick="onClickCheck()">Check</button>
-    
+
 </body>
 
 </html>

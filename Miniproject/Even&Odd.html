@@ -9,6 +9,7 @@
             let num = Number(document.getElementById("txtNum").value);
             if (num % 2 == 0 && (num % 10==0))  {
                 alert("Divisible by 10");
+                document.getElementById("result").innerHTML="Divisible by 10"
             }
             else {
                 alert("Odd Number");
@@ -26,6 +27,7 @@
     <label>Number</label>
     <input id="txtNum"><br>
     <button onclick="onClickEvenOdd()">Even/Odd</button>
+    <p id="result"></p>
 
 </body>
 

@@ -9,6 +9,7 @@
             let num = Number(document.getElementById("txtnum").value);
             if (num % 3 == 0 || num % 10==0) {
                 alert("Divisible by 3 and 10");
+                document.getElementById("result").innerHTML="Divisible by 3 and 10"
             }
             else {
                 alert("Not divisible by 3 and 10");
@@ -19,9 +20,14 @@
 </head>
 
 <body>
+    <header>
+<a href="../index.html">Back to Home</a>
+</header>
+<hr>
     <label>Number</label>
     <input id="txtnum">
     <button onclick="onClickNumber()">check</button>
+    <p id="result"></p>
 </body>
 
 </html>

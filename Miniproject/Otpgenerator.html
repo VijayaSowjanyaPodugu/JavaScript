@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OTP Generator</title>
+    <script>
+        function onClickOTP() {
+            let mobile = document.getElementById("txtNum").value;
+            if (mobile.length !== 10 || isNaN(mobile)) {
+                alert("Please enter a valid 10-digit mobile number.");
+            }
+            let otp = Math.floor(1000 + Math.random() * 9999);
+            alert(otp)
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <hr>
+    <label>Phone Number</label>
+    <input id="txtNum" type="number" maxlength="10" placeholder="enter Phone number">
+    <button onclick="onClickOTP()">Generate OTP</button>
+</body>
+
+</html>
